@@ -44,16 +44,15 @@ IAM role has been created with name "Inventoryrole" and attached AmazonSQSFullAc
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/039cc1cc-3cba-4232-a206-e84c1fc030db)
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/9f064f6a-4a22-47cf-ae28-378b741ad856)
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/eb9affe8-f182-4303-bbfe-41245d85d2da)
-![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/91a61ae3-6c17-4e89-a06b-4b1a08f4df4e)
- <p>&nbsp;</p>
+<p>&nbsp;</p>
  
- Moving to next step, Lambda function has been created "Inventory". This  Lambda function retrieves messages from Amazon SQS and will return a message to Step Functions that represents the result of the request.  Runtime selected as "Node.js" and added created IAM role "Inventory role" to lambda function.
+Moving to next step, Lambda function has been created "Inventory". This  Lambda function retrieves messages from Amazon SQS and will return a message to Step Functions that represents the result of the request.  Runtime selected as "Node.js" and added created IAM role "Inventory role" to lambda function.
  
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/5c6c2ca7-d9e4-426f-84fe-704e0e27e0c1)
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/f1af4e29-5222-47fe-94ac-03689bc6459f)
 <p>&nbsp;</p>
  
- Under Configuration tab-->Triggers -->Add trigger and selected  the SQS trigger with other options Turn on the Activate trigger toggle for the Orders queue and created trigger.
+Under Configuration tab-->Triggers -->Add trigger and selected  the SQS trigger with other options Turn on the Activate trigger toggle for the Orders queue and created trigger.
  
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/7893652b-b991-431e-b181-42396eb459d5)
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/cea0e156-e9d3-48d2-8c4f-6e8d17aec9f9)
@@ -70,7 +69,7 @@ Step Functions make us to inspect each step of workflow execution, including the
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/fc4f89d0-806c-47f7-8bbd-9abc8e9915e0)
 ![image](https://github.com/intuiter/Aws-SQS-and-Step-Functions/assets/135228471/1a783f4d-2a6c-4576-b758-e81568b79567)
  
- Finally have successfully executed the task and Lambda function returned the result to Step Functions, as inventory is available of an order which in return callback pattern satisfied.
+Finally have successfully executed the task and Lambda function returned the result to Step Functions, as inventory is available of an order which in return callback pattern satisfied.
 
 
 
